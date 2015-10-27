@@ -41,6 +41,8 @@ SECTIONS
     *(.rdata.cmds)
     commands_end = .;
   }
+  .bss : {
+  }
 }
 
 /* Create two symbols around all code. */
