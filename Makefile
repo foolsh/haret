@@ -39,16 +39,16 @@ vpath %.rc src/wince
 
 ################ cegcc settings
 
-BASE ?= /opt/mingw32ce
+BASE ?= /usr/local/bin/
 export BASE
 
-RC = $(BASE)/bin/arm-mingw32ce-windres
+RC = $(BASE)arm-mingw32ce-windres
 RCFLAGS = -r -l 0x409 -Iinclude
 
-CXX = $(BASE)/bin/arm-mingw32ce-g++
-STRIP = $(BASE)/bin/arm-mingw32ce-strip
+CXX = $(BASE)arm-mingw32ce-g++
+STRIP = $(BASE)arm-mingw32ce-strip
 
-DLLTOOL = $(BASE)/bin/arm-mingw32ce-dlltool
+DLLTOOL = $(BASE)arm-mingw32ce-dlltool
 DLLTOOLFLAGS =
 
 define compile_armv4
